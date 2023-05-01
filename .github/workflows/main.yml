@@ -27,7 +27,6 @@ jobs:
           node-version: '18.15.0'
           cache: 'npm'
       - name: Install dependencies
-        if: ${{ github.event_name == 'pull_request' }}
         run: npm ci
       - name: Lint
         run: npm run lint
