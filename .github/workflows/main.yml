@@ -30,4 +30,4 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: npm ci
       - name: Lint
-        run: npm run eslint
+        run: npm run lint
