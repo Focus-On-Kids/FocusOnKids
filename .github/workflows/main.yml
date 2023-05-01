@@ -1,0 +1,14 @@
+name: FocusOnKids Production
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  avoid_redundancy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Cancel Previous Builds
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{github.token}}
