@@ -1,4 +1,4 @@
-import "./App.css";
+import './App.css'
 // react router
 function App() {
   return (
