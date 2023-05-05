@@ -1,9 +1,10 @@
 import './App.css';
+import Layout from './components/layout/Layout';
 
 function App() {
   return (
     <>
-      <h1>Comenzando proyecto</h1>
+      <Layout></Layout>
     </>
   );
 }
