@@ -1,14 +1,15 @@
+import Header from '../header/Header';
 import style from './layout.module.css';
 
 const Layout = () => {
   return (
-    <body className={style.flexWrapper}>
-      {/* <Header/> */}
+    <div className={style.flexWrapper}>
+      <Header></Header>
 
       {/* contenido  */}
 
       {/* <Footer/> */}
-    </body>
+    </div>
   );
 };
 
