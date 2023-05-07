@@ -1,0 +1,35 @@
+.novedades {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.novedades h1 {
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: 1.25em;
+}
+
+.novedades__section__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  gap: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .novedades__section__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .novedades h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .novedades__section__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

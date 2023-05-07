@@ -1,0 +1,13 @@
+.button {
+  width: fit-content;
+  margin: 0 auto;
+  border: 0;
+  outline: none;
+  padding: 0.7em 1em;
+  color: green;
+  font-size: 1.1em;
+  border: thin solid green;
+  border-radius: 1.5em;
+  background-color: transparent;
+  cursor: pointer;
+}
