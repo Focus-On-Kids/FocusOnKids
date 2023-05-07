@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import iconos from '../../assets/icons/iconos';
-import logos from '../../assets/logo/logos';
+import iconos from '../../assets/icons';
+import logos from '../../assets/logo';
 import style from './header.module.css';
 
 export default function MenuDesktop() {

@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  margin-top: 1.5em;
+  padding: 1em 0;
+  background-color: var(--principal-color-green);
+}
+
+.footer__section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  text-align: center;
+}
+
+.footer__article__contact {
+  display: flex;
+  gap: 0.75em;
+}
+
+.footer__article__contact img {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

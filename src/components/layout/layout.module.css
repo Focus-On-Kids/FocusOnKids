@@ -1,8 +1,12 @@
-.flexWrapper {
+.layout__div__container {
   display: flex;
   flex-direction: column;
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  background-color: #f4f1f1;
+}
+
+.layout__main {
+  max-width: 1200px;
+  width: 100%;
 }

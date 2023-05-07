@@ -1,10 +1,10 @@
 import style from './header.module.css';
-import iconos from '../../assets/icons/iconos';
+import iconos from '../../assets/icons';
 import MenuMobil from './MenuMobil';
 import MenuDesktop from './MenuDesktop';
 import useResize from '../../hooks/useResize';
 
-export default function Header() {
+export function Header() {
   const { screenSize } = useResize();
 
   return (
