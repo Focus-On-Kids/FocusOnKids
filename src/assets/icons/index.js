@@ -12,8 +12,15 @@ import linkedin from './linkedin.svg';
 import email from './email.svg';
 import whatsapp from './whatsapp.svg';
 
+import cash from './cash.svg';
+import card from './card.svg';
+import paypal from './paypal.svg';
+
 const icons = {
   cv,
+  cash,
+  card,
+  paypal,
   pin,
   lupa,
   lupaB,

@@ -1,26 +1,37 @@
 .carrusel__container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  padding: 0 2em;
-  margin: 1em auto;
+  max-width: 1200px;
+  padding: 0 1em;
+  margin: 0 auto;
+  margin-top: 2em;
 }
 
 .carrusel__container img {
-  width: 100%;
-  max-height: 200px;
-  border-radius: 0.25em;
-  margin: 1em auto;
+  max-width: 20%;
 }
 
-.carrusel__dots input {
+.carrusel__section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrusel__section img {
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.carrusel__div__dots input {
   display: none;
 }
 
-.carrusel__dots label {
+.carrusel__div__dots label {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -28,4 +39,17 @@
   border-radius: 50%;
   background-color: var(--principal-color-green-op);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .carrusel__section img {
+    max-height: 150px;
+    min-height: 150px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carrusel__section img {
+    min-height: 180px;
+  }
 }
