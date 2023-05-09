@@ -1,28 +1,28 @@
 import { Novedad } from '../novedad/Novedad';
-import others from '../../assets/others';
+import novedades from '../../assets/novedades';
 import styles from './novedades.module.css';
 
 const NOVEDADES_ITEMS = [
   {
-    img: others.novedades,
+    img: novedades.novedad1,
     title: 'Curso',
     subtitle: 'Colaboración con equipos de profesionales a distancia.',
     description: 'Lorem ipsum.'
   },
   {
-    img: others.novedades,
+    img: novedades.novedad2,
     title: 'Capacitaciones para Alumnas',
     subtitle: 'Dando sentido a la Regulación Emocional.',
     description: 'Lorem ipsum.'
   },
   {
-    img: others.novedades,
+    img: novedades.novedad3,
     title: 'Oferta Laboral',
     subtitle: 'Grupos de supervisión y formación para terapista ocupacionales y otros profesionales.',
     description: 'Lorem ipsum.'
   },
   {
-    img: others.novedades,
+    img: novedades.novedad4,
     title: 'Servicios',
     subtitle: 'Evaluación y tratamientos intensivos para niños y familias.',
     description: 'Lorem ipsum.'
