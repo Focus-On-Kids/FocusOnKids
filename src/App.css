@@ -7,6 +7,7 @@
   --principal-color-green-op: #9ec0a9;
   --principal-color-white: #f4f1f1;
   --principal-color-black: #222;
+  --principal-color-greenOP: #1d763ea3;
 
   --secondary-color-blue: #0548a8;
   --secondary-color-sky-blue: #90cddf54;
@@ -23,5 +24,5 @@ html {
 }
 
 .carrusel__dot__active {
-  background-color: var(--principal-color-green) !important; 
+  background-color: var(--principal-color-green) !important;
 }

@@ -1,14 +1,24 @@
+// hooks
 import { useState } from 'react';
-import iconos from '../../assets/icons';
+// components
+// import MenuItems from './MenuItems';
+// iconos e imagenes
+import icons from '../../assets/icons';
 import logos from '../../assets/logo';
-import style from './header.module.css';
+// css estilos
+// import style from './header.module.css';
+import style from './menuDesktop.module.css';
 
 export default function MenuDesktop() {
+  // estados del menu desplegable en escritorio
   const [showSubMenu, setShowSubMenu] = useState(false);
 
+  // funciones para mostrar los submues
   const toggleSubMenu = () => {
     setShowSubMenu(!showSubMenu);
   };
+
+  // TODO hacer que se cierren los submenues cauando se cierra el padre, intentar con hover
 
   return (
     <section className={style.header__contenido__desktop}>
@@ -18,25 +28,36 @@ export default function MenuDesktop() {
         </div>
 
         <div className={style.header__desktop__iconos}>
-          {/* descargar lupa color negro para aca */}
-          <img className={style.iconos__lupa} src={iconos.lupaB} alt="buscar" />
+          <img className={style.iconos__lupa} src={icons.lupaB} alt="buscar" />
           <img
             className={style.iconos__bandera}
-            src={iconos.bandera}
+            src={icons.bandera}
             alt="bandera argentina"
           />
         </div>
       </div>
 
+      {/* Componente que muetra los links , en proceso */}
+      {/* <MenuItems />; */}
+      {/* ************************ */}
       <nav className={style.header__menu__desktop}>
         <ul>
           <li>
             <a href="#">ACERCA DE</a>
           </li>
           <li>
-            <a href="#">SOBRE BELÉN</a>
+            <a href="#">SOBRE BELEN</a>
           </li>
-          <li onClick={toggleSubMenu}>SERVICIOS&#x2304;</li>
+          <li onClick={toggleSubMenu}>
+            <div className={style.menu__dropdown}>
+              <span>SERVICIOS </span>
+              <img
+                className={style.menu__chevron}
+                src={icons.chevronB}
+                alt="drop menu"
+              />
+            </div>
+          </li>
           <li>
             <a href="#">NOVEDADES</a>
           </li>
@@ -49,22 +70,16 @@ export default function MenuDesktop() {
         {showSubMenu && (
           <ul className={style.dropdown__servicios__desktop}>
             <li>
-              <a href="#">Charlas abiertas a la comunidad</a>
+              <a href="#">Evaluaciones</a>
             </li>
             <li>
-              <a href="#">Sesiones de Colaboración</a>
-            </li>
-            <li>
-              <a href="#">Supervisión</a>
-            </li>
-            <li>
-              <a href="#">Tratamientos Intensivos</a>
-            </li>
-            <li>
-              <a href="#">Grupo de Estudios</a>
+              <a href="#">Tratamientos intensivos</a>
             </li>
             <li>
               <a href="#">Supervisiones</a>
+            </li>
+            <li>
+              <a href="#">Formaciones</a>
             </li>
           </ul>
         )}

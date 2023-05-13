@@ -17,8 +17,8 @@ export function Header() {
         </a>
       </section>
 
-      {/* hacer un condicional que muestre un menu u otro segú tamaño de pantalla */}
-      {screenSize < 768 ? <MenuMobil></MenuMobil> : <MenuDesktop></MenuDesktop>}
+      {/* hacer un solo componente menu!!! */}
+      {screenSize < 768 ? <MenuMobil /> : <MenuDesktop />}
     </header>
   );
 }
