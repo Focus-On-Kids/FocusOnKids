@@ -5,6 +5,8 @@ import bandera from './IMenuInver.svg';
 import open from './open.svg';
 import lupaB from './lupa1a.svg';
 import close from './close.svg';
+import chevron from './layer1.svg';
+import chevronB from './Frame 287.svg';
 
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
@@ -27,11 +29,13 @@ const icons = {
   bandera,
   open,
   close,
+  chevron,
+  chevronB,
   facebook,
   instagram,
   linkedin,
   email,
-  whatsapp
+  whatsapp,
 };
 
 export default icons;

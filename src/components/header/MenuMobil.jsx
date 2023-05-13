@@ -1,20 +1,30 @@
+//react hooks
 import { useState } from 'react';
-import iconos from '../../assets/icons';
+
+// imagenes
+import icons from '../../assets/icons';
 import logos from '../../assets/logo';
-import style from './header.module.css';
+
+// estilos
+// import style from './header.module.css';
+import style from './menuMobil.module.css';
 
 export default function MenuMobil() {
+  // manejo de estado del menu hamburguesa
   const [showMenu, setShowMenu] = useState(false);
-
   const toggleMenu = () => {
-    setShowMenu((prevState) => !prevState);
+    setShowMenu(!showMenu);
+    setShowSubMenu(false);
   };
 
+  // manejo de estdo de submenu
   const [showSubMenu, setShowSubMenu] = useState(false);
 
   const toggleSubMenu = () => {
     setShowSubMenu(!showSubMenu);
   };
+
+  // el sub menus se deven cerrar caundo se cierra su menu anterior
 
   return (
     <section className={style.header__position}>
@@ -22,9 +32,9 @@ export default function MenuMobil() {
         <div className={style.nav__dropdown}>
           <div onClick={toggleMenu}>
             {showMenu ? (
-              <img src={iconos.close} alt="cierra menu" />
+              <img src={icons.close} alt="cierra menu" />
             ) : (
-              <img src={iconos.open} alt="abremenu" />
+              <img src={icons.open} alt="abremenu" />
             )}
           </div>
         </div>
@@ -34,15 +44,15 @@ export default function MenuMobil() {
         </div>
 
         <div className={style.header__mobil__bandera}>
-          <img src={iconos.bandera} alt="arg" />
+          <img src={icons.bandera} alt="arg" />
         </div>
       </div>
 
       <nav>
         {showMenu && (
           <ul className={style.nav__dropdown__options}>
-            <li>
-              <img src={iconos.bandera} alt="arg" />
+            <li className={style.nav__items} id="list">
+              <img src={icons.bandera} alt="arg" />
             </li>
             <li>
               <a href="#">ACERCA DE</a>
@@ -50,32 +60,33 @@ export default function MenuMobil() {
             <li>
               <a href="#">SOBRE BELÉN</a>
             </li>
-            <li className={style.dropdown__servicios} onClick={toggleSubMenu}>
-              {/* <div onClick={toggleSubMenu}>SERVICIOS &#x2304;</div> */}
-              SERVICIOS &#x2304;
+            <li onClick={toggleSubMenu}>
+              <div className={style.dropdown__servicios}>
+                <span>SERVICIOS</span>
+                <img
+                  className={style.menu__chevron}
+                  src={icons.chevron}
+                  alt="drop menu"
+                />
+              </div>
               {showSubMenu && (
                 <ul className={style.submenu}>
-                  <li>
-                    <a href="#">Charlas abiertas a la comunidad</a>
+                  <li className={style.submenu__list}>
+                    <a href="#">Evaluaciones</a>
                   </li>
-                  <li>
-                    <a href="#">Sesiones de Colaboración</a>
+                  <li className={style.submenu__list}>
+                    <a href="#">Tratamientos intensivos</a>
                   </li>
-                  <li>
-                    <a href="#">Supervisión</a>
-                  </li>
-                  <li>
-                    <a href="#">Tratamientos Intensivos</a>
-                  </li>
-                  <li>
-                    <a href="#">Grupo de Estudios</a>
-                  </li>
-                  <li>
+                  <li className={style.submenu__list}>
                     <a href="#">Supervisiones</a>
+                  </li>
+                  <li className={style.submenu__list}>
+                    <a href="#">Formaciones</a>
                   </li>
                 </ul>
               )}
             </li>
+
             <li>
               <a href="#">NOVEDADES</a>
             </li>
@@ -88,12 +99,12 @@ export default function MenuMobil() {
                   className={style.buscar__input}
                   type="text"
                   name="lupa"
-                  id=""
+                  id="buscar"
                   placeholder="Buscar..."
                 />
                 <img
                   className={style.buscar__lupa}
-                  src={iconos.lupa}
+                  src={icons.lupa}
                   alt="buscar"
                 />
               </div>
