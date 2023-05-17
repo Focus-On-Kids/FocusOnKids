@@ -1,11 +1,12 @@
 import style from './header.module.css';
 import iconos from '../../assets/icons';
-import MenuMobil from './MenuMobil';
-import MenuDesktop from './MenuDesktop';
-import useResize from '../../hooks/useResize';
+// import MenuMobil from './MenuMobil';
+// import MenuDesktop from './MenuDesktop';
+import MenuItems from './MenuItems';
+// import useResize from '../../hooks/useResize';
 
 export function Header() {
-  const { screenSize } = useResize();
+  // const { screenSize } = useResize();
 
   return (
     <header className={style.header}>
@@ -18,7 +19,8 @@ export function Header() {
       </section>
 
       {/* hacer un solo componente menu!!! */}
-      {screenSize < 768 ? <MenuMobil /> : <MenuDesktop />}
+      <MenuItems />
+      {/* {screenSize < 768 ? <MenuMobil /> : <MenuDesktop />} */}
     </header>
   );
 }

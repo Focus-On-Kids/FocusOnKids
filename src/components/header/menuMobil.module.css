@@ -27,7 +27,7 @@
 .nav__dropdown__options li {
   list-style: none;
   border-bottom: 1px solid var(--principal-color-greenOP);
-  width: 50%;
+  width: 100%;
   padding: .75rem;
 
 }
