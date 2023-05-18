@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import style from './header.module.css';
 import iconos from '../../assets/icons';
 // import MenuMobil from './MenuMobil';
@@ -11,11 +13,11 @@ export function Header() {
   return (
     <header className={style.header}>
       <section className={style.header__info}>
-        <a href="#">
+        <Link href="/">
           Si estas fuera de Santa Fe - Arg. Contactame{' '}
           <img src={iconos.cv} alt="cv" />
           <img src={iconos.pin} alt="pin" />
-        </a>
+        </Link>
       </section>
 
       {/* hacer un solo componente menu!!! */}

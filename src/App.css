@@ -23,6 +23,13 @@ html {
   background-color: var(--principal-color-white);
 }
 
-.carrusel__dot__active {
-  background-color: var(--principal-color-green) !important;
+.carousel__indicator {
+  margin-right: 0.25em;
+  padding: 0.25em;
+  border-radius: 50%;
+  background-color: var(--principal-color-green-op);
+  cursor: pointer;
+}
+.carousel__indicator.active {
+  background-color: var(--principal-color-green);
 }

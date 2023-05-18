@@ -1,53 +1,55 @@
+import { Link } from 'react-router-dom';
+
 import icons from '../../assets/icons';
 import styles from './footer.module.css';
 
 const EXPLORE_ITEMS = [
   {
     title: 'Acerca de',
-    to: '#'
+    to: '/acerca'
   },
   {
     title: 'Sobre Belén',
-    to: '#'
+    to: '/belen'
   },
   {
     title: 'Servicios',
-    to: '#'
+    to: '/'
   },
   {
     title: 'Novedades',
-    to: '#'
+    to: '/'
   },
   {
     title: 'Contacto',
-    to: '#'
+    to: '/'
   }
 ];
 
 const SERVICES = [
   {
     title: 'Charlas abierta a la comunidad',
-    to: '#'
+    to: '/'
   },
   {
     title: 'Sesiones de colaboración',
-    to: '#'
+    to: '/'
   },
   {
     title: 'Tratamientos Intensivos',
-    to: '#'
+    to: '/'
   },
   {
     title: 'Grupos de Estudio',
-    to: '#'
+    to: '/'
   },
   {
     title: 'Evaluaciones',
-    to: '#'
+    to: '/'
   },
   {
     title: 'Supervisiones',
-    to: '#'
+    to: '/'
   }
 ];
 
@@ -85,12 +87,12 @@ export function Footer() {
             <h4>EXPLORA</h4>
             {
               EXPLORE_ITEMS.map((item) => (
-                <a
+                <Link
                   key={item.title}
-                  href={item.to}
+                  to={item.to}
                 >
                   {item.title}
-                </a>
+                </Link>
               ))
             }
           </article>
@@ -98,12 +100,12 @@ export function Footer() {
             <h4>SERVICIOS</h4>
             {
               SERVICES.map((item) => (
-                <a
+                <Link
                   key={item.title}
-                  href={item.to}
+                  to={item.to}
                 >
                   {item.title}
-                </a>
+                </Link>
               ))
             }
           </article>

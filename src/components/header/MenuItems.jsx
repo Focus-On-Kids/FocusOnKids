@@ -1,4 +1,7 @@
 import { useState } from 'react';
+
+import { Link } from 'react-router-dom';
+
 import menuLinks from './menuLinks';
 import icons from '../../assets/icons';
 import logos from '../../assets/logo';
@@ -42,8 +45,8 @@ export default function MenuItems() {
               onClick={
                 item.subMenu
                   ? () => {
-                      toggleSubMenu(item);
-                    }
+                    toggleSubMenu(item);
+                  }
                   : null
               }
             >
@@ -59,7 +62,7 @@ export default function MenuItems() {
                 </div>
               ) : (
                 //si no hay sub menu, crea el link
-                <a href={item.link}>{item.title}</a>
+                <Link href={item.link}>{item.title}</Link>
               )}
             </li>
           ))}
@@ -68,10 +71,10 @@ export default function MenuItems() {
           {!subMenu
             ? null
             : subMenu.subMenu.map((menu) => (
-                <li key={menu.id}>
-                  <a href={menu.link}>{menu.title}</a>
-                </li>
-              ))}
+              <li key={menu.id}>
+                <Link href={menu.link}>{menu.title}</Link>
+              </li>
+            ))}
         </ul>
       </nav>
     </section>

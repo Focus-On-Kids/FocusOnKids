@@ -1,0 +1,14 @@
+.cta__article__contact {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.cta__article__contact h3 {
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .cta__article__contact {
+    display: none;
+  }
+}

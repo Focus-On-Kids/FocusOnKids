@@ -7,7 +7,7 @@ export function Novedad ({ novedad }) {
       <figure className={styles.novedad__aside__item}>
         <img src={novedad.img} alt={novedad.subtitle} />
       </figure>
-      <Button text="Ver más" />
+      <Button>Ver más</Button>
     </article >
   );
 }

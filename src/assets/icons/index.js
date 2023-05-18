@@ -1,12 +1,14 @@
-import cv from './Frame268.svg';
-import pin from './Frame269.svg';
-import lupa from './Lup2a.svg';
-import bandera from './IMenuInver.svg';
-import open from './open.svg';
-import lupaB from './lupa1a.svg';
+import cv from './cv.svg';
+import pin from './pin.svg';
+import lupa from './lupa2.svg';
+import bandera from './bandera1.svg';
+import open from './open1.svg';
+import lupaB from './lupa1.svg';
 import close from './close.svg';
-import chevron from './layer1.svg';
-import chevronB from './Frame 287.svg';
+import chevron from './chevron.svg';
+import chevronB from './chevron_green.svg';
+import arrowLeft from './arrow_left.svg';
+import arrowRight from './arrow_right.svg';
 
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
@@ -19,6 +21,8 @@ import card from './card.svg';
 import paypal from './paypal.svg';
 
 const icons = {
+  arrowLeft,
+  arrowRight,
   cv,
   cash,
   card,
@@ -35,7 +39,7 @@ const icons = {
   instagram,
   linkedin,
   email,
-  whatsapp,
+  whatsapp
 };
 
 export default icons;
