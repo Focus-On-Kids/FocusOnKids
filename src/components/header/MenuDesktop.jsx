@@ -65,7 +65,6 @@ export default function MenuDesktop() {
             <a href="#">CONTACTO</a>
           </li>
         </ul>
-
         {/* menu desplegable de item servicios */}
         {showSubMenu && (
           <ul className={style.dropdown__servicios__desktop}>

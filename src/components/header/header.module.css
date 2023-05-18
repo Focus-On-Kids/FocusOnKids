@@ -7,7 +7,7 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
-  border-bottom: 12px solid var(--principal-color-green);
+  border-bottom: 3px solid var(--principal-color-green);
 }
 
 /* ***************************************************** */
@@ -23,6 +23,8 @@
 .header__info img {
   width: 20px;
   height: 20px;
+  margin-right: .3rem;
+  vertical-align: middle;
 }
 
 .header__info a {
