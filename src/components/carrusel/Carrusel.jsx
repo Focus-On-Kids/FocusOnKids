@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { Slide } from 'react-slideshow-image';
 
-import { Dot } from '../dots/Dot';
 import carrusel from '../../assets/carrusel';
 import styles from './carrusel.module.css';
 
@@ -14,7 +13,7 @@ const CARRUSEL_IMAGES = [
     id: 'slide-1',
   },
   {
-    img: carrusel.carrusel1,
+    img: carrusel.carrusel3,
     id: 'slide-2',
   },
   {
@@ -23,27 +22,29 @@ const CARRUSEL_IMAGES = [
   },
 ];
 
+const indicators = () => (<div className="carousel__indicator"></div>);
+
 export function Carrusel () {
-  const [active, setActive] = useState(0);
-  const [currentImg, setCurrentImg] = useState(CARRUSEL_IMAGES[active].img);
-
-  const selectNewImg = (index) => {
-    setCurrentImg(CARRUSEL_IMAGES[index].img);
-    setActive(index);
-  };
-
   return (
     <section className={styles.carrusel__container}>
       <img src={carrusel.pyramid_left} alt="pyramid dots decoration" />
-      <section className={styles.carrusel__section}>
-        <img
-          src={`${currentImg}`}
-          alt="Carrusel"
-        />
-        <div className={styles.carrusel__div__dots}>
-          {CARRUSEL_IMAGES.map((slide, idx) => <Dot key={slide.id} selectNewImg={selectNewImg} active={active} slide={slide} index={idx} />)}
-        </div>
-      </section>
+      <Slide
+        easing="ease"
+        duration={5000}
+        infinite={false}
+        arrows={false}
+        indicators={indicators}
+      >
+        {
+          CARRUSEL_IMAGES.map((image) => (
+            <div
+              key={image.id}
+              className={styles.each__slide__img}
+              style={{ backgroundImage: `url(${image.img})` }}
+            ></div>
+          ))
+        }
+      </Slide>
       <img src={carrusel.pyramid_right} alt="pyramid dots decoration" />
     </section>
   );

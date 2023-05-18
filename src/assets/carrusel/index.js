@@ -1,17 +1,16 @@
-import novedades from './Rectangle_29.svg';
-
-import pyramid_left from './pyramid-left.svg';
-import pyramid_right from './pyramid-right.svg';
-import carrusel1 from './logofok.svg';
-import carrusel2 from './carrusel-img4.svg';
-import carrusel4 from './carrusel-img2.svg';
+import pyramid_left from './pyramid_left.svg';
+import pyramid_right from './pyramid_right.svg';
+import carrusel1 from './carrusel1.png';
+import carrusel2 from './carrusel2.png';
+import carrusel3 from './carrusel3.png';
+import carrusel4 from './carrusel4.png';
 
 const carrusel = {
-  novedades,
   pyramid_left,
   pyramid_right,
   carrusel1,
   carrusel2,
+  carrusel3,
   carrusel4
 };
 

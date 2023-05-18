@@ -1,9 +1,9 @@
+import { Link } from 'react-router-dom';
+
 import styles from './button.module.css';
 
-export function Button ({ text }) {
+export function Button ({ children, href }) {
   return (
-    <div>
-      <button className={styles.button}>{text}</button>
-    </div>
+    <Link href={href} className={styles.button}>{children}</Link>
   );
 }
