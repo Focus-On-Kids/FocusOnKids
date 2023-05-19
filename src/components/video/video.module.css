@@ -1,0 +1,52 @@
+.video__article__container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.video__article__container video {
+  width: 100%;
+  border-radius: 2em;
+}
+
+.video {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50.5%);
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5em;
+  border: 12px solid var(--principal-color-grey);
+  background-color: #fff;
+}
+
+.video > :first-child {
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.video__line__left__bottom {
+  width: 113.5%;
+  transform: rotate(29deg);
+  transform-origin: top left;
+  border-top: 1px solid #252525;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  box-sizing: border-box;
+}
+
+.video__line__right__bottom {
+  width: 113.5%;
+  transform: rotate(-29deg);
+  transform-origin: bottom left;
+  border-top: 1px solid #252525;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+}

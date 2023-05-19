@@ -6,6 +6,7 @@
   --principal-color-green: #1d763d;
   --principal-color-green-op: #9ec0a9;
   --principal-color-white: #f4f1f1;
+  --principal-color-grey: #dadada;
   --principal-color-black: #222;
   --principal-color-greenOP: #1d763ea3;
 
@@ -21,6 +22,12 @@ body {
 
 html {
   background-color: var(--principal-color-white);
+}
+
+hr {
+  background-color: var(--principal-color-pink);
+  height: 1px;
+  border: none;
 }
 
 .carousel__indicator {

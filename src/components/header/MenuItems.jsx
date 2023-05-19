@@ -62,7 +62,7 @@ export default function MenuItems() {
                 </div>
               ) : (
                 //si no hay sub menu, crea el link
-                <Link href={item.link}>{item.title}</Link>
+                <Link to={item.link}>{item.title}</Link>
               )}
             </li>
           ))}
@@ -72,7 +72,7 @@ export default function MenuItems() {
             ? null
             : subMenu.subMenu.map((menu) => (
               <li key={menu.id}>
-                <Link href={menu.link}>{menu.title}</Link>
+                <Link to={menu.link}>{menu.title}</Link>
               </li>
             ))}
         </ul>

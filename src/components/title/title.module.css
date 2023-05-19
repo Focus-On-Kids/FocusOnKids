@@ -1,0 +1,19 @@
+.title {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+  padding: 0.25em 0;
+  border-bottom: 2px solid var(--principal-color-green-op);
+  border-top: 2px solid var(--principal-color-green-op);
+}
+
+.title__h1 {
+  color: var(--principal-color-pink);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    margin-bottom: 1.5em;
+  }
+}

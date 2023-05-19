@@ -1,0 +1,11 @@
+.picture {
+  position: relative;
+}
+
+.picture__img {
+  width: 200px;
+  height: 200px;
+  padding: 0.6em;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--principal-color-grey), var(--principal-color-white));
+}

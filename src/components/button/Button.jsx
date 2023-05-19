@@ -4,6 +4,6 @@ import styles from './button.module.css';
 
 export function Button ({ children, href }) {
   return (
-    <Link href={href} className={styles.button}>{children}</Link>
+    <Link to={href} className={styles.button}>{children}</Link>
   );
 }
