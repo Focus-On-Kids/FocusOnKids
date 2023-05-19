@@ -1,0 +1,19 @@
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  border-radius: 50%;
+  background-color: var(--principal-color-pink);
+  cursor: pointer;
+}
+
+.play img {
+  width: 50%;
+  height: auto;
+}

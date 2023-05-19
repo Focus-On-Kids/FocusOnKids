@@ -1,11 +1,11 @@
 import { Button } from '../button/Button';
 import styles from './ctacontact.module.css';
 
-export function CTAContact() {
+export function CTAContact({ alwaysActive = false }) {
   return (
-    <article className={styles.cta__article__contact}>
+    <article className={alwaysActive ? styles.cta__article__contact : `${styles.cta__article__contact} ${styles.no__active}`}>
       <h3>Para más información podes</h3>
-      <Button>Contactarnos</Button>
+      <Button href="/">Contactarnos</Button>
     </article>
   );
 }

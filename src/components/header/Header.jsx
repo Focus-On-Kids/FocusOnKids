@@ -13,7 +13,7 @@ export function Header() {
   return (
     <header className={style.header}>
       <section className={style.header__info}>
-        <Link href="/">
+        <Link to="/">
           Si estas fuera de Santa Fe - Arg. Contactame{' '}
           <img src={iconos.cv} alt="cv" />
           <img src={iconos.pin} alt="pin" />

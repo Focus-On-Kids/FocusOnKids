@@ -9,6 +9,8 @@ import chevron from './chevron.svg';
 import chevronB from './chevron_green.svg';
 import arrowLeft from './arrow_left.svg';
 import arrowRight from './arrow_right.svg';
+import play from './play.svg';
+import modal_close from './modal_close.svg';
 
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
@@ -28,6 +30,7 @@ const icons = {
   card,
   paypal,
   pin,
+  play,
   lupa,
   lupaB,
   bandera,
@@ -38,6 +41,7 @@ const icons = {
   facebook,
   instagram,
   linkedin,
+  modal_close,
   email,
   whatsapp
 };
