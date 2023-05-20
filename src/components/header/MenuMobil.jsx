@@ -1,6 +1,6 @@
 //react hooks
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 // imagenes
 import icons from '../../assets/icons';
 import logos from '../../assets/logo';
@@ -55,13 +55,16 @@ export default function MenuMobil() {
               <img src={icons.bandera} alt="arg" />
             </li>
             <li>
-              <a href="#">ACERCA DE</a>
+              <Link to="/acerca de">ACERCA DE</Link>
             </li>
             <li>
-              <a href="#">SOBRE BELÉN</a>
+              <Link to="/belen">SOBRE BELÉN</Link>
             </li>
-            <li onClick={toggleSubMenu}>
-              <div className={style.dropdown__servicios}>
+            <li>
+              <div
+                className={style.dropdown__servicios}
+                onClick={toggleSubMenu}
+              >
                 <span>SERVICIOS</span>
                 <img
                   className={style.menu__chevron}
@@ -72,26 +75,26 @@ export default function MenuMobil() {
               {showSubMenu && (
                 <ul className={style.submenu}>
                   <li className={style.submenu__list}>
-                    <a href="#">Evaluaciones</a>
+                    <Link to="#">Evaluaciones</Link>
                   </li>
                   <li className={style.submenu__list}>
-                    <a href="#">Tratamientos intensivos</a>
+                    <Link to="#">Tratamientos intensivos</Link>
                   </li>
                   <li className={style.submenu__list}>
-                    <a href="#">Supervisiones</a>
+                    <Link to="#">Supervisiones</Link>
                   </li>
                   <li className={style.submenu__list}>
-                    <a href="#">Formaciones</a>
+                    <Link to="#">Formaciones</Link>
                   </li>
                 </ul>
               )}
             </li>
 
             <li>
-              <a href="#">NOVEDADES</a>
+              <Link to="#">NOVEDADES</Link>
             </li>
             <li>
-              <a href="#">CONTACTO</a>
+              <Link to="#">CONTACTO</Link>
             </li>
             <li className={style.buscar}>
               <div className={style.buscar__container}>

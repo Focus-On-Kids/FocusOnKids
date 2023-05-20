@@ -1,0 +1,54 @@
+.acercaDe {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.acercaDe p {
+  line-height: 1.75;
+  text-align: justify;
+  margin-top: 1.5em;
+}
+
+.title__info {
+  font-size: 1.25rem;
+  margin: .5rem;
+}
+
+.container__img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem;
+
+}
+
+.picture {
+  position: relative;
+}
+
+.picture__img {
+  width: 7rem;
+  padding: 0.6em;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--principal-color-grey), var(--principal-color-white));
+}
+
+.ocultar {
+  display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 540px) {
+  .ocultar {
+    display: inline;
+  }
+
+  .container__img {
+    justify-content: center;
+    gap: 2rem;
+  }
+}

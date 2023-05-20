@@ -1,14 +1,14 @@
 const menuLinks = [
   {
     title: 'ACERCA DE',
-    href: '#',
+    href: '/acerca de',
     subMenu: null,
     class: '',
     id: 11,
   },
   {
     title: 'SOBRE BELEN',
-    href: '#',
+    href: '/belen',
     subMenu: null,
     class: '',
     id: 12,
