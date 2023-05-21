@@ -11,11 +11,12 @@ import arrowLeft from './arrow_left.svg';
 import arrowRight from './arrow_right.svg';
 import play from './play.svg';
 import modal_close from './modal_close.svg';
+import cta from './cta.svg';
 
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
 import linkedin from './linkedin.svg';
-import email from './email.svg';
+import email from './mail.svg';
 import whatsapp from './whatsapp.svg';
 
 import cash from './cash.svg';
@@ -26,6 +27,7 @@ const icons = {
   arrowLeft,
   arrowRight,
   cv,
+  cta,
   cash,
   card,
   paypal,

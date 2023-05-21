@@ -6,7 +6,7 @@
 }
 
 .carrusel__container [aria-roledescription="carousel"] {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -19,18 +19,21 @@
   height: 120px;
 }
 
+@media screen and (min-width: 500px) {
+  .carrusel__container [aria-roledescription="carousel"] {
+    width: 60%;
+  }
+  
+}
+
 @media screen and (min-width: 768px) {
   .carrusel__container {
     margin-top: 1em;
-  }
-  
-  .each__slide__img {
-    height: 140px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .each__slide__img {
-    height: 200px;
+    height: 180px;
   }
 }

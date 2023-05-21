@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import icons from '../../assets/icons';
+import logos from '../../assets/logo';
 import styles from './footer.module.css';
 
 const EXPLORE_ITEMS = [
@@ -28,19 +29,15 @@ const EXPLORE_ITEMS = [
 
 const SERVICES = [
   {
-    title: 'Charlas abierta a la comunidad',
+    title: 'Formación',
     to: '/'
   },
   {
-    title: 'Sesiones de colaboración',
+    title: 'Coaching a Padres',
     to: '/'
   },
   {
     title: 'Tratamientos Intensivos',
-    to: '/'
-  },
-  {
-    title: 'Grupos de Estudio',
     to: '/'
   },
   {
@@ -59,20 +56,35 @@ const CONTACT_DATA = [
     src: icons.facebook
   },
   {
-    href: 'https://www.instagram.com/focus.on.kids/',
+    href: 'https://www.instagram.com/focus.on.kids',
     src: icons.instagram
   },
   {
-    href: 'https://www.linkedin.com/company/focusonkids/',
+    href: 'https://www.linkedin.com/company/focusonkids',
     src: icons.linkedin
   },
   {
     href: 'mailto:focusonkids.to@gmail.com',
     src: icons.email
+  }
+];
+
+const COLLAB_DATA = [
+  {
+    title: 'Connecting Kids',
+    to: '/'
   },
   {
-    href: 'tel:+5492974924433',
-    src: icons.whatsapp
+    title: 'Kairós',
+    to: '/'
+  },
+  {
+    title: 'Huellas',
+    to: '/'
+  },
+  {
+    title: 'InterAttivaMente',
+    to: '/'
   }
 ];
 
@@ -83,6 +95,11 @@ export function Footer() {
     <footer className={styles.footer}>
       <section className={styles.footer__section__container}>
         <section className={styles.footer__section__contact}>
+          <article className={styles.footer__article__none}>
+            <figure className={styles.footer__figure__logo}>
+              <img src={logos.white_logo} alt="Focus On Kids logo" />
+            </figure>
+          </article>
           <article className={styles.footer__article__none}>
             <h4>EXPLORA</h4>
             {
@@ -116,9 +133,6 @@ export function Footer() {
               <img src={icons.paypal} alt="paypal icon" />
               <img src={icons.cash} alt="cash icon" />
             </div>
-            <div>
-              <h4>COLABORACIÓN</h4>
-            </div>
           </article>
           <article className={styles.footer__article__visible}>
             <h4>REDES SOCIALES</h4>
@@ -130,22 +144,24 @@ export function Footer() {
                     href={contact.href}
                     target="_blank" rel="noopener noreferrer"
                   >
-                    <img src={contact.src} alt="" />
+                    <img src={contact.src} alt="contact logo" />
                   </a>
                 ))
               }
             </div>
-            <article className={styles.footer__article__none}>
-              <h4>CONTACT0</h4>
-              <a href="mailto:focusonkids.to@gmail.com">
-                <img src={icons.email} alt="email icon" />
-                focusonkids.bc@gmail.com
-              </a>
-              <a href="tel:+5492974924433">
-                <img src={icons.whatsapp} alt="whatsapp icon" />
-                +54 9 297 4924433
-              </a>
-            </article>
+            <aside>
+              <h4>COLABORACIÓN</h4>
+              {
+                COLLAB_DATA.map((collab) => (
+                  <Link
+                    key={collab.title}
+                    to={collab.to}
+                  >
+                    {collab.title}
+                  </Link>
+                ))
+              }
+            </aside>
           </article>
         </section>
       </section>
