@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 
 import style from './header.module.css';
 import iconos from '../../assets/icons';
-// import MenuMobil from './MenuMobil';
+import MenuMobil from './MenuMobil';
 // import MenuDesktop from './MenuDesktop';
 import MenuItems from './MenuItems';
-// import useResize from '../../hooks/useResize';
+import useResize from '../../hooks/useResize';
 
 export function Header() {
-  // const { screenSize } = useResize();
+  const { screenSize } = useResize();
 
   return (
     <header className={style.header}>
@@ -21,8 +21,8 @@ export function Header() {
       </section>
 
       {/* hacer un solo componente menu!!! */}
-      <MenuItems />
-      {/* {screenSize < 768 ? <MenuMobil /> : <MenuDesktop />} */}
+
+      {screenSize < 768 ? <MenuMobil /> : <MenuItems />}
     </header>
   );
 }

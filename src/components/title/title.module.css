@@ -1,6 +1,7 @@
 .title {
   max-width: 600px;
   margin: 0 auto;
+  margin-top: 2rem;
   margin-bottom: 2.5em;
   padding: 0.25em 0;
   border-bottom: 2px solid var(--principal-color-green-op);

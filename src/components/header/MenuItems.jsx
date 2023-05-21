@@ -23,7 +23,9 @@ export default function MenuItems() {
     <section className={style.header__contenido__desktop}>
       <div className={style.desktop__container}>
         <div className={style.header__desktop__logo}>
-          <img src={logos.logoPNG} alt="logo" />
+          <Link to="/">
+            <img src={logos.logoPNG} alt="logo" />
+          </Link>
         </div>
 
         <div className={style.header__desktop__iconos}>
@@ -45,8 +47,8 @@ export default function MenuItems() {
               onClick={
                 item.subMenu
                   ? () => {
-                    toggleSubMenu(item);
-                  }
+                      toggleSubMenu(item);
+                    }
                   : null
               }
             >
@@ -62,7 +64,7 @@ export default function MenuItems() {
                 </div>
               ) : (
                 //si no hay sub menu, crea el link
-                <Link to={item.link}>{item.title}</Link>
+                <Link to={item.href}>{item.title}</Link>
               )}
             </li>
           ))}
@@ -71,10 +73,10 @@ export default function MenuItems() {
           {!subMenu
             ? null
             : subMenu.subMenu.map((menu) => (
-              <li key={menu.id}>
-                <Link to={menu.link}>{menu.title}</Link>
-              </li>
-            ))}
+                <li key={menu.id}>
+                  <Link to={menu.href}>{menu.title}</Link>
+                </li>
+              ))}
         </ul>
       </nav>
     </section>
