@@ -1,13 +1,14 @@
 import { useModal } from '../hooks/useModal';
 import { Layout } from '../components/layout/Layout';
 import { CTAContact } from '../components/cta/CTAContact';
+import CTASocialMedia from '../components/cta/CTASocialMedia';
 import { Picture } from '../components/picture/Picture';
 import { Title } from '../components/title/Title';
 import { Video } from '../components/video/Video';
 import { Modal } from '../components/modal/Modal';
 import styles from './belen.module.css';
 
-export default function Belen() {
+function Belen() {
   const [isOpenModal, openModal, closeModal] = useModal(false);
   return (
     <Layout>
@@ -37,3 +38,5 @@ export default function Belen() {
     </Layout>
   );
 }
+
+export default CTASocialMedia(Belen);
