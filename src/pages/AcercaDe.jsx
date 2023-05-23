@@ -1,15 +1,15 @@
 // ? Componentes
 import { Layout } from '../components/layout/Layout';
 import { Title } from '../components/title/Title';
+import CTASocialMedia from '../components/cta/CTASocialMedia';
 import { CTAContact } from '../components/cta/CTAContact';
 // ? estilos
 import styles from './acerca.module.css';
 
-export default function AcercaDe() {
+function AcercaDe() {
   return (
     <Layout>
       <Title>Acerca De</Title>
-      {/* <hr className={styles.division} /> */}
       <section className={styles.acercaDe}>
         <p>
           Focus On Kids es un emprendimiento que surge en 2018 con la idea de
@@ -26,8 +26,8 @@ export default function AcercaDe() {
         <p>
           Sesiones de colaboración que son muy similares a sesiones de
           supervición pero que la idea de que sea una instancia colaborativa,
-          tiene que ver con una filosofía de Focus de que "ayudándonos, nos
-          ayudamos mutuamente". Por otro lado también ofrecemos Charlas abiertas
+          tiene que ver con una filosofía de Focus de que &ldquo;ayudándonos, nos
+          ayudamos mutuamente&rdquo;. Por otro lado también ofrecemos Charlas abiertas
           a la comunidad y grupos de estudio.
         </p>
         <p>
@@ -85,3 +85,5 @@ export default function AcercaDe() {
     </Layout>
   );
 }
+
+export default CTASocialMedia(AcercaDe);
