@@ -7,7 +7,7 @@ import styles from './footer.module.css';
 const EXPLORE_ITEMS = [
   {
     title: 'Acerca de',
-    to: '/acerca'
+    to: '/acercade'
   },
   {
     title: 'Sobre Belén',
@@ -29,8 +29,8 @@ const EXPLORE_ITEMS = [
 
 const SERVICES = [
   {
-    title: 'Formación',
-    to: '/'
+    title: 'Formaciones',
+    to: '/servicios/formaciones'
   },
   {
     title: 'Coaching a Padres',
@@ -46,36 +46,35 @@ const SERVICES = [
   },
   {
     title: 'Supervisiones',
-    to: '/'
+    to: '/servicios/supervisiones'
   }
 ];
 
 const CONTACT_DATA = [
   {
     href: 'https://www.facebook.com/focusonkids.bc',
-    src: icons.facebook
+    src: icons.facebook_rd,
+    target: '_blank'
   },
   {
     href: 'https://www.instagram.com/focus.on.kids',
-    src: icons.instagram
+    src: icons.instagram_rd,
+    target: '_blank'
   },
   {
     href: 'https://www.linkedin.com/company/focusonkids',
-    src: icons.linkedin
+    src: icons.linkedin_rd,
+    target: '_blank'
   },
   {
-    href: 'mailto:focusonkids.to@gmail.com',
-    src: icons.email
+    href: '/',
+    src: icons.email_rd
   }
 ];
 
 const COLLAB_DATA = [
   {
     title: 'Connecting Kids',
-    to: '/'
-  },
-  {
-    title: 'Kairós',
     to: '/'
   },
   {
@@ -139,13 +138,13 @@ export function Footer() {
             <div>
               {
                 CONTACT_DATA.map((contact) => (
-                  <a
+                  <Link
                     key={contact.src}
-                    href={contact.href}
-                    target="_blank" rel="noopener noreferrer"
+                    to={contact.href}
+                    target={contact.target} rel="noopener noreferrer"
                   >
                     <img src={contact.src} alt="contact logo" />
-                  </a>
+                  </Link>
                 ))
               }
             </div>

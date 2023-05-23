@@ -6,7 +6,7 @@
 }
 
 .carrusel__container [aria-roledescription="carousel"] {
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -16,24 +16,29 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 120px;
+  height: 70px;
+}
+
+@media screen and (min-width: 400px) {
+  .each__slide__img {
+    height: 90px;
+  }
 }
 
 @media screen and (min-width: 500px) {
-  .carrusel__container [aria-roledescription="carousel"] {
-    width: 60%;
+  .each__slide__img {
+    height: 110px;
   }
-  
 }
 
 @media screen and (min-width: 768px) {
-  .carrusel__container {
-    margin-top: 1em;
+  .each__slide__img {
+    height: 130px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .each__slide__img {
-    height: 180px;
+    height: 200px;
   }
 }

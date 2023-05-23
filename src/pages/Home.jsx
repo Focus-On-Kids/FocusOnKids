@@ -9,7 +9,7 @@ function Home() {
     <Layout>
       <Carrusel />
       <Novedades />
-      <CTAContact />
+      <CTAContact withCollabLogos />
     </Layout>
   );
 }
