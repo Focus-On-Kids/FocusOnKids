@@ -5,6 +5,9 @@
 }
 
 .desktop__container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,14 +15,19 @@
 }
 
 .header__desktop__logo img {
-  height: 6em;
+  height: 5em;
 }
 
 .header__desktop__iconos {
   display: flex;
-  width: 4rem;
-  padding: .5rem .5rem;
   justify-content: space-between;
+  width: 5rem;
+  padding: .5rem .5rem;
+  cursor: pointer;
+}
+
+.header__desktop__iconos .header__desktop__iconos .iconos__lupa:hover {
+  color: var(--principal-color-pink);
 }
 
 .header__menu__desktop ul {
@@ -59,17 +67,27 @@
   cursor: pointer;
 }
 
+.header__menu__desktop ul li:hover,
+.header__menu__desktop ul li a:hover {
+  color: var(--principal-color-pink);
+}
+
 
 .header__menu__desktop .dropdown__servicios__desktop {
   background-color: var(--principal-color-green);
   padding: .5rem;
 }
 
-.header__menu__desktop .dropdown__servicios__desktop li a,
-.dropdown__servicios__desktop span {
+
+
+.header__menu__desktop .dropdown__servicios__desktop li a {
   display: flex;
   color: var(--principal-color-white);
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: .5rem;
+}
+
+.header__menu__desktop .dropdown__servicios__desktop li .color__links:hover {
+  color: var(--principal-color-greenOp);
 }

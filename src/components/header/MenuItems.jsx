@@ -29,12 +29,20 @@ export default function MenuItems() {
         </div>
 
         <div className={style.header__desktop__iconos}>
-          <img className={style.iconos__lupa} src={icons.lupaB} alt="buscar" />
-          <img
-            className={style.iconos__bandera}
-            src={icons.bandera}
-            alt="bandera argentina"
-          />
+          <div>
+            <img
+              className={style.iconos__lupa}
+              src={icons.lupaB}
+              alt="buscar"
+            />
+          </div>
+          <div>
+            <img
+              className={style.iconos__bandera}
+              src={icons.bandera}
+              alt="bandera argentina"
+            />
+          </div>
         </div>
       </div>
 
@@ -74,7 +82,9 @@ export default function MenuItems() {
             ? null
             : subMenu.subMenu.map((menu) => (
                 <li key={menu.id}>
-                  <Link to={menu.href}>{menu.title}</Link>
+                  <p className={style.color__links}>
+                    <Link to={menu.href}>{menu.title}</Link>
+                  </p>
                 </li>
               ))}
         </ul>

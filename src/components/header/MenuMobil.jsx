@@ -1,13 +1,13 @@
-//react hooks
+//  react hooks
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // imagenes
 import icons from '../../assets/icons';
 import logos from '../../assets/logo';
-
-// estilos
-// import style from './header.module.css';
+// estilos css
 import style from './menuMobil.module.css';
+// componetes
+import menuLinks from './menuLinks';
 
 export default function MenuMobil() {
   // manejo de estado del menu hamburguesa
@@ -19,16 +19,13 @@ export default function MenuMobil() {
 
   // manejo de estdo de submenu
   const [showSubMenu, setShowSubMenu] = useState(false);
-
   const toggleSubMenu = () => {
     setShowSubMenu(!showSubMenu);
   };
 
-  // el sub menus se deven cerrar caundo se cierra su menu anterior
-
   return (
-    <section className={style.header__position}>
-      <div className={style.header__contenido__mobil}>
+    <section className={style.position}>
+      <div className={style.contenido__mobil}>
         <div className={style.nav__dropdown}>
           <div onClick={toggleMenu}>
             {showMenu ? (
@@ -39,11 +36,13 @@ export default function MenuMobil() {
           </div>
         </div>
 
-        <div className={style.header__mobil__logo}>
-          <img src={logos.logoPNG} alt="logo" />
+        <div className={style.mobil__logo}>
+          <Link to="/">
+            <img src={logos.logoPNG} alt="logo" />
+          </Link>
         </div>
 
-        <div className={style.header__mobil__bandera}>
+        <div className={style.mobil__bandera}>
           <img src={icons.bandera} alt="arg" />
         </div>
       </div>
@@ -51,51 +50,36 @@ export default function MenuMobil() {
       <nav>
         {showMenu && (
           <ul className={style.nav__dropdown__options}>
-            <li className={style.nav__items} id="list">
-              <img src={icons.bandera} alt="arg" />
-            </li>
-            <li>
-              <Link to="/acerca de">ACERCA DE</Link>
-            </li>
-            <li>
-              <Link to="/belen">SOBRE BELÉN</Link>
-            </li>
-            <li>
-              <div
-                className={style.dropdown__servicios}
-                onClick={toggleSubMenu}
-              >
-                <span>SERVICIOS</span>
-                <img
-                  className={style.menu__chevron}
-                  src={icons.chevron}
-                  alt="drop menu"
-                />
-              </div>
-              {showSubMenu && (
-                <ul className={style.submenu}>
-                  <li className={style.submenu__list}>
-                    <Link to="#">Evaluaciones</Link>
-                  </li>
-                  <li className={style.submenu__list}>
-                    <Link to="#">Tratamientos intensivos</Link>
-                  </li>
-                  <li className={style.submenu__list}>
-                    <Link to="#">Supervisiones</Link>
-                  </li>
-                  <li className={style.submenu__list}>
-                    <Link to="#">Formaciones</Link>
-                  </li>
-                </ul>
-              )}
-            </li>
-
-            <li>
-              <Link to="#">NOVEDADES</Link>
-            </li>
-            <li>
-              <Link to="#">CONTACTO</Link>
-            </li>
+            {menuLinks.map((link) => (
+              <li key={link.id} className={style.nav__items}>
+                {link.subMenu ? (
+                  <>
+                    <div
+                      className={style.dropdown__servicios}
+                      onClick={toggleSubMenu}
+                    >
+                      <span>{link.title}</span>
+                      <img
+                        className={style.menu__chevron}
+                        src={icons.chevron}
+                        alt="drop menu"
+                      />
+                    </div>
+                    {showSubMenu && (
+                      <ul className={style.submenu}>
+                        {link.subMenu.map((subLink) => (
+                          <li key={subLink.id} className={style.submenu__list}>
+                            <Link to={subLink.href}>{subLink.title}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </>
+                ) : (
+                  <Link to={link.href}>{link.title}</Link>
+                )}
+              </li>
+            ))}
             <li className={style.buscar}>
               <div className={style.buscar__container}>
                 <input

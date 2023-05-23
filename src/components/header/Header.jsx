@@ -19,9 +19,6 @@ export function Header() {
           <img src={iconos.pin} alt="pin" />
         </Link>
       </section>
-
-      {/* hacer un solo componente menu!!! */}
-
       {screenSize < 768 ? <MenuMobil /> : <MenuItems />}
     </header>
   );

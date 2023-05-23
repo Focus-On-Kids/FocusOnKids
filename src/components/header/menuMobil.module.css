@@ -1,9 +1,9 @@
-.header__position {
+.position {
   display: flex;
   flex-direction: column;
 }
 
-.header__contenido__mobil {
+.contenido__mobil {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
@@ -12,16 +12,15 @@
   width: 95vw;
 }
 
-.header__mobil__logo img {
+.mobil__logo img {
   height: 4rem;
   -o-object-fit: contain;
   object-fit: contain;
 }
 
-.header__mobil__bandera {
+.mobil__bandera {
   margin-bottom: .7rem;
 }
-
 
 
 .nav__dropdown__options li {
@@ -94,6 +93,3 @@
   background-color: #dadada;
   border-radius: 15px;
 }
-
-
-/* TODO buscar debe ser ancho como el contenedor, no lo logre y tambien se debe sacar el borde inferioir en esta parte */
