@@ -7,6 +7,14 @@
   margin-bottom: 1em;
 }
 
+.cta__aside__collab {
+  max-width: 300px;
+  display: flex;
+  gap: 1em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
 @media screen and (min-width: 1024px) {
   .no__active {
     display: none;
