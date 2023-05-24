@@ -7,6 +7,9 @@ import Supervisiones from './pages/Supervisiones';
 import Formaciones from './pages/Formaciones';
 
 import './App.css';
+import Evaluaciones from './pages/Evaluaciones';
+import Tratamientos from './pages/Tratamientos';
+import Coaching from './pages/Coaching';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/acercade" element={<AcercaDe />} />
         <Route path="/belen" element={<Belen />} />
+        <Route path="/servicios/evaluaciones" element={<Evaluaciones />} />
+        <Route path="/servicios/intensivos" element={<Tratamientos />} />
+        <Route path="/servicios/coaching" element={<Coaching />} />
         <Route path="/servicios/supervisiones" element={<Supervisiones />} />
         <Route path="/servicios/formaciones" element={<Formaciones />} />
       </Routes>

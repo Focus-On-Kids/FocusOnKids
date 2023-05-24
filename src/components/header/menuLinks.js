@@ -1,7 +1,7 @@
 const menuLinks = [
   {
     title: 'ACERCA DE',
-    href: '/acerca de',
+    href: '/acercade',
     subMenu: null,
     class: '',
     id: 11,
@@ -18,27 +18,27 @@ const menuLinks = [
     subMenu: [
       {
         title: 'Evaluaciones',
-        href: '/evaluaciones',
+        href: '/servicios/evaluaciones',
         id: 21,
       },
       {
         title: 'Tratamientos intensivos',
-        href: '/intensivos',
+        href: '/servicios/intensivos',
         id: 22,
       },
       {
         title: 'Coaching a Padres',
-        href: '/coaching',
+        href: '/servicios/coaching',
         id: 23,
       },
       {
         title: 'Supervisiones',
-        href: '/supervisiones',
+        href: '/servicios/supervisiones',
         id: 24,
       },
       {
         title: 'Formaciones',
-        href: '/formaciones',
+        href: '/servicios/formaciones',
         id: 25,
       },
     ],

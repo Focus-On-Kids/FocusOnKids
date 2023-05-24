@@ -1,0 +1,65 @@
+.flag {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.flag img {
+  width: 25px;
+  margin: 0 .3rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.container h2 {
+  margin-bottom: 2rem;
+}
+
+.article {
+  display: flex;
+  align-items: flex-start;
+  margin: 3rem auto;
+}
+
+.article img {
+  width: 25px;
+  margin-right: 1rem;
+}
+
+.article .text {
+  line-height: 1.75;
+  text-align: justify;
+  margin-top: -0.5rem;
+}
+
+.coaching__article__content {
+  margin-right: 3em;
+  text-align: justify;
+}
+
+.coaching__section__content h2 {
+  margin-top: 1em;
+  color: var(--principal-color-pink);
+}
+
+.division {
+  margin: 1em 0;
+}
+
+.coaching__section__content .colab__container {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3.5rem auto;
+}
+
+.colab__container .colab__imagen {
+  padding: .7rem;
+}
