@@ -1,7 +1,7 @@
 const menuLinks = [
   {
     title: 'ACERCA DE',
-    href: '/acerca de',
+    href: '/acercade',
     subMenu: null,
     class: '',
     id: 11,
