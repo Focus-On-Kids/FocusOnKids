@@ -3,10 +3,11 @@ import { Layout } from '../components/layout/Layout';
 import { Title } from '../components/title/Title';
 import { CTAContact } from '../components/cta/CTAContact';
 import Imagen from '../components/img/Imagen';
+import CTASocialMedia from '../components/cta/CTASocialMedia';
 // estilos
 import style from './evaluaciones.module.css';
 
-export default function Evaluaciones() {
+function Evaluaciones() {
   return (
     <Layout>
       <Title>Evaluaciones</Title>
@@ -43,7 +44,9 @@ export default function Evaluaciones() {
         <Imagen src="src/assets/novedades/novedad2.svg" alt="novedad" />
       </section>
 
-      <CTAContact />
+      <CTAContact alwaysActive />
     </Layout>
   );
 }
+
+export default CTASocialMedia(Evaluaciones);

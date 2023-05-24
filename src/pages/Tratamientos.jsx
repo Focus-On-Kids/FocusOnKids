@@ -2,11 +2,12 @@
 import { Layout } from '../components/layout/Layout';
 import { Title } from '../components/title/Title';
 import { CTAContact } from '../components/cta/CTAContact';
+import CTASocialMedia from '../components/cta/CTASocialMedia';
 import Imagen from '../components/img/Imagen';
 // estilos
 import style from './evaluaciones.module.css';
 
-export default function Tratamientos() {
+function Tratamientos() {
   return (
     <Layout>
       <Title>Tratamientos Intensivos</Title>
@@ -53,7 +54,9 @@ export default function Tratamientos() {
         <Imagen src="src/assets/novedades/novedad2.svg" alt="novedad" />
       </section>
 
-      <CTAContact />
+      <CTAContact alwaysActive />
     </Layout>
   );
 }
+
+export default CTASocialMedia(Tratamientos);

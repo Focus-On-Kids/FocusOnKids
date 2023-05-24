@@ -2,11 +2,12 @@
 import { Layout } from '../components/layout/Layout';
 import { Title } from '../components/title/Title';
 import { CTAContact } from '../components/cta/CTAContact';
+import CTASocialMedia from '../components/cta/CTASocialMedia';
 import icons from '../assets/icons';
 import colab from '../assets/img/index.js';
 import style from './coaching.module.css';
 
-export default function Coaching() {
+function Coaching() {
   return (
     <Layout>
       <Title>Coaching a Padres</Title>
@@ -71,7 +72,9 @@ export default function Coaching() {
         </section>
       </section>
 
-      <CTAContact />
+      <CTAContact alwaysActive />
     </Layout>
   );
 }
+
+export default CTASocialMedia(Coaching);

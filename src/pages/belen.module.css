@@ -1,3 +1,8 @@
+.container {
+  width: 85%;
+  margin: 3rem auto;
+}
+
 .role__article {
   display: flex;
   gap: 1em;
@@ -10,7 +15,7 @@
   text-align: center;
 }
 
-.role__div__content > hr {
+.role__div__content>hr {
   display: none;
 }
 
@@ -41,7 +46,7 @@
     text-align: left;
   }
 
-  .role__div__content > hr {
+  .role__div__content>hr {
     display: block;
   }
 
