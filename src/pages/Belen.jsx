@@ -52,9 +52,9 @@ function Belen() {
             estudiantes y las nuevas generaciones... de quienes continúo
             aprendiendo a diario.
           </p>
+          <Video />
         </section>
       </section>
-      <Video />
       <CTAContact alwaysActive />
     </Layout>
   );
