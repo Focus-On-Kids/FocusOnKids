@@ -1,0 +1,23 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.container p {
+  line-height: 1.75;
+  text-align: justify;
+  margin-top: 1.5em;
+}
+
+.container li {
+  list-style: none;
+}
+
+.img__container {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3.5rem auto;
+}
