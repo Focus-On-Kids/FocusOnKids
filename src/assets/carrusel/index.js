@@ -1,17 +1,13 @@
-import pyramid_left from './pyramid_left.svg';
-import pyramid_right from './pyramid_right.svg';
-import carrusel1 from './carrusel1.png';
-import carrusel2 from './carrusel2.png';
-import carrusel3 from './carrusel3.png';
-import carrusel4 from './carrusel4.png';
+import carousel1 from './carousel1.svg';
+import carousel2 from './carousel2.svg';
+import carousel3 from './carousel3.svg';
+import carousel4 from './carousel4.svg';
 
 const carrusel = {
-  pyramid_left,
-  pyramid_right,
-  carrusel1,
-  carrusel2,
-  carrusel3,
-  carrusel4
+  carousel1,
+  carousel2,
+  carousel3,
+  carousel4
 };
 
 export default carrusel;

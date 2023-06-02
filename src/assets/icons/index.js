@@ -13,6 +13,7 @@ import chevronB from './chevron_green.svg';
 import arrowLeft from './arrow_left.svg';
 import arrowRight from './arrow_right.svg';
 import play from './play.svg';
+import play_white from './play_w.svg';
 import pause from './pause.svg';
 import modal_close from './modal_close.svg';
 import cta from './cta.svg';
@@ -49,6 +50,7 @@ const icons = {
   lupa,
   lupaB,
   bandera,
+  play_white,
   it_flag,
   es_flag,
   uk_flag,

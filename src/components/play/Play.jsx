@@ -4,7 +4,7 @@ import styles from './play.module.css';
 export function Play() {
   return (
     <div className={styles.play}>
-      <img src={icons.play} alt="Play button" />
+      <img src={icons.play_white} alt="Play button" />
     </div>
   );
 }

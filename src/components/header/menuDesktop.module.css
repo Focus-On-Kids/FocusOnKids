@@ -47,8 +47,12 @@
 
 .header__menu__desktop .menu__chevron {
   color: var(--principal-color-black);
-  height: .5rem;
+  height: 0.5rem;
+}
 
+.header__menu__desktop .menu__chevron__rotate {
+  transform: rotate(180deg);
+  height: 0.5rem;
 }
 
 
@@ -65,6 +69,7 @@
   color: var(--principal-color-black);
   font-weight: bold;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .header__menu__desktop ul li:hover,
@@ -88,6 +93,6 @@
   margin-top: .5rem;
 }
 
-.header__menu__desktop .dropdown__servicios__desktop li .color__links:hover {
-  color: var(--principal-color-greenOp);
+.header__menu__desktop .dropdown__servicios__desktop li a:hover {
+  color: var(--principal-color-green-op);
 }
