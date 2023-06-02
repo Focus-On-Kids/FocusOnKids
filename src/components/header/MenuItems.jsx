@@ -55,8 +55,8 @@ export default function MenuItems() {
               onClick={
                 item.subMenu
                   ? () => {
-                      toggleSubMenu(item);
-                    }
+                    toggleSubMenu(item);
+                  }
                   : null
               }
             >
@@ -65,7 +65,7 @@ export default function MenuItems() {
                 <div className={style.menu__dropdown}>
                   <span>{item.title}</span>
                   <img
-                    className={style.menu__chevron}
+                    className={subMenu ? style.menu__chevron__rotate : style.menu__chevron}
                     src={icons.chevronB}
                     alt="drop menu"
                   />
@@ -81,12 +81,12 @@ export default function MenuItems() {
           {!subMenu
             ? null
             : subMenu.subMenu.map((menu) => (
-                <li key={menu.id}>
-                  <p className={style.color__links}>
-                    <Link to={menu.href}>{menu.title}</Link>
-                  </p>
-                </li>
-              ))}
+              <li key={menu.id}>
+                <p>
+                  <Link to={menu.href}>{menu.title}</Link>
+                </p>
+              </li>
+            ))}
         </ul>
       </nav>
     </section>
