@@ -42,17 +42,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 3px;
 }
 
+
+
 .header__menu__desktop .menu__chevron {
-  color: var(--principal-color-black);
+  /* color: var(--principal-color-black); */
   height: 0.5rem;
+  font-size: 1.5rem;
+  transform: rotate(0deg);
+  transition: all .4s ease;
 }
 
 .header__menu__desktop .menu__chevron__rotate {
   transform: rotate(180deg);
+  font-size: 1.5rem;
   height: 0.5rem;
+  transition: all .4s ease;
 }
 
 
@@ -81,6 +89,13 @@
 .header__menu__desktop .dropdown__servicios__desktop {
   background-color: var(--principal-color-green);
   padding: .5rem;
+  height: 0%;
+  transition: all 2s ease-in-out;
+}
+
+.dropdownOpen {
+  height: 100%;
+
 }
 
 

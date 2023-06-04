@@ -12,15 +12,27 @@ import menuLinks from './menuLinks';
 export default function MenuMobil() {
   // manejo de estado del menu hamburguesa
   const [showMenu, setShowMenu] = useState(false);
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
+  const toggleMenu = (menues) => {
+    setShowMenu(menues);
+    if (menues.id === showMenu.id) {
+      setShowMenu(null);
+    } else {
+      setShowMenu(menues);
+    }
+    // setShowMenu(!showMenu);
     setShowSubMenu(false);
   };
 
   // manejo de estdo de submenu
   const [showSubMenu, setShowSubMenu] = useState(false);
-  const toggleSubMenu = () => {
-    setShowSubMenu(!showSubMenu);
+  const toggleSubMenu = (subMenues) => {
+    setShowSubMenu(subMenues);
+    if (subMenues.id === showSubMenu.id) {
+      setShowSubMenu(null);
+    } else {
+      setShowSubMenu(subMenues);
+    }
+    // setShowSubMenu(!showSubMenu);
   };
 
   return (
@@ -60,7 +72,11 @@ export default function MenuMobil() {
                     >
                       <span>{link.title}</span>
                       <img
-                        className={style.menu__chevron}
+                        className={
+                          showSubMenu
+                            ? style.menu__chevron__rotate
+                            : style.menu__chevron
+                        }
                         src={icons.chevron}
                         alt="drop menu"
                       />
