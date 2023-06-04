@@ -89,15 +89,7 @@
 .header__menu__desktop .dropdown__servicios__desktop {
   background-color: var(--principal-color-green);
   padding: .5rem;
-  height: 0%;
-  transition: all 2s ease-in-out;
 }
-
-.dropdownOpen {
-  height: 100%;
-
-}
-
 
 
 .header__menu__desktop .dropdown__servicios__desktop li a {
