@@ -3,9 +3,23 @@
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2.5em;
-  padding: 0.25em 0;
+  padding: 1em 0;
   border-bottom: 2px solid var(--principal-color-green-op);
   border-top: 2px solid var(--principal-color-green-op);
+}
+
+.flag {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.flag img {
+  width: 25px;
+  margin: 0px .3rem;
+  margin-top: -5.125rem;
+
 }
 
 .title__h1 {
@@ -16,5 +30,9 @@
 @media screen and (min-width: 768px) {
   .title {
     margin-bottom: 1.5em;
+  }
+
+  .flag img {
+    margin-top: -3.125rem;
   }
 }

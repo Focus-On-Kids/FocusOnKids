@@ -10,11 +10,7 @@ import style from './coaching.module.css';
 function Coaching() {
   return (
     <Layout>
-      <Title>Coaching a Padres</Title>
-      <div className={style.flag}>
-        <img src={icons.es_flag} alt="Spanish language" />
-        <img src={icons.it_flag} alt="Italian language" />
-      </div>
+      <Title flags={true}>Coaching a Padres</Title>
       <section className={style.container}>
         <h3>Habla Hispana e Italiana</h3>
         <article className={style.article}>

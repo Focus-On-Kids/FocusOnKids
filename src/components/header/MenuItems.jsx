@@ -55,8 +55,8 @@ export default function MenuItems() {
               onClick={
                 item.subMenu
                   ? () => {
-                    toggleSubMenu(item);
-                  }
+                      toggleSubMenu(item);
+                    }
                   : null
               }
             >
@@ -64,11 +64,27 @@ export default function MenuItems() {
               {item.subMenu ? (
                 <div className={style.menu__dropdown}>
                   <span>{item.title}</span>
+
                   <img
-                    className={subMenu ? style.menu__chevron__rotate : style.menu__chevron}
+                    className={
+                      subMenu
+                        ? style.menu__chevron__rotate
+                        : style.menu__chevron
+                    }
                     src={icons.chevronB}
                     alt="drop menu"
                   />
+
+                  {/* esto es lo que estaba intentando, pero no pude centrat la flecha . */}
+                  {/* <span
+                    className={
+                      subMenu
+                        ? style.menu__chevron__rotate
+                        : style.menu__chevron
+                    }
+                  >
+                  &#x2038;
+                  </span> */}
                 </div>
               ) : (
                 //si no hay sub menu, crea el link
@@ -81,12 +97,12 @@ export default function MenuItems() {
           {!subMenu
             ? null
             : subMenu.subMenu.map((menu) => (
-              <li key={menu.id}>
-                <p>
-                  <Link to={menu.href}>{menu.title}</Link>
-                </p>
-              </li>
-            ))}
+                <li key={menu.id}>
+                  <p>
+                    <Link to={menu.href}>{menu.title}</Link>
+                  </p>
+                </li>
+              ))}
         </ul>
       </nav>
     </section>
