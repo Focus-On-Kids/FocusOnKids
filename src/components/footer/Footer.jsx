@@ -14,16 +14,12 @@ const EXPLORE_ITEMS = [
     to: '/belen',
   },
   {
-    title: 'Servicios',
-    to: '/',
-  },
-  {
     title: 'Novedades',
     to: '/',
   },
   {
     title: 'Contacto',
-    to: '/',
+    to: '/contacto',
   },
 ];
 
