@@ -5,11 +5,12 @@ import Belen from './pages/Belen';
 import AcercaDe from './pages/AcercaDe';
 import Supervisiones from './pages/Supervisiones';
 import Formaciones from './pages/Formaciones';
-
-import './App.css';
 import Evaluaciones from './pages/Evaluaciones';
 import Tratamientos from './pages/Tratamientos';
 import Coaching from './pages/Coaching';
+import Contacto from './pages/Contacto';
+
+import './App.css';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/servicios/coaching" element={<Coaching />} />
         <Route path="/servicios/supervisiones" element={<Supervisiones />} />
         <Route path="/servicios/formaciones" element={<Formaciones />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </HashRouter>
   );

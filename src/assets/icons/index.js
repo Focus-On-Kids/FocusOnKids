@@ -17,6 +17,7 @@ import play_white from './play_w.svg';
 import pause from './pause.svg';
 import modal_close from './modal_close.svg';
 import cta from './cta.svg';
+import timer from './timer.gif';
 
 import facebook_rd from './facebook_rounded.svg';
 import instagram_rd from './instagram_rounded.svg';
@@ -48,6 +49,7 @@ const icons = {
   pin,
   play,
   lupa,
+  timer,
   lupaB,
   bandera,
   play_white,
