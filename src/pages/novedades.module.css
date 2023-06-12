@@ -1,0 +1,40 @@
+.subTitulo {
+  margin-right: 3em;
+  text-align: justify;
+}
+
+.subTitulo h2 {
+  margin-top: 1em;
+  margin-bottom: .7em;
+  font-size: 1em;
+  color: var(--principal-color-pink);
+}
+
+.novedades .division {
+  margin: 1em 0;
+}
+
+.tarjeta {
+  /* ver dispocicon grid */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.comunidad__img {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3.5rem auto;
+}
+
+
+@media screen and (min-width: 780px) {
+  .tarjeta {
+    justify-content: center;
+  }
+}
