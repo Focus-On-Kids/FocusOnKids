@@ -17,6 +17,7 @@ import play_white from './play_w.svg';
 import pause from './pause.svg';
 import modal_close from './modal_close.svg';
 import cta from './cta.svg';
+import calendar from './calendar.svg';
 import timer from './timer.gif';
 
 import facebook_rd from './facebook_rounded.svg';
@@ -68,7 +69,8 @@ const icons = {
   modal_close,
   email,
   email_rd,
-  whatsapp_rd
+  whatsapp_rd,
+  calendar,
 };
 
 export default icons;

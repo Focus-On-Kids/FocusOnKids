@@ -8,6 +8,7 @@ import Formaciones from './pages/Formaciones';
 import Evaluaciones from './pages/Evaluaciones';
 import Tratamientos from './pages/Tratamientos';
 import Coaching from './pages/Coaching';
+import Novedades from './pages/Novedades';
 import Contacto from './pages/Contacto';
 
 import './App.css';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/servicios/coaching" element={<Coaching />} />
         <Route path="/servicios/supervisiones" element={<Supervisiones />} />
         <Route path="/servicios/formaciones" element={<Formaciones />} />
+        <Route path="/novedades" element={<Novedades />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </HashRouter>

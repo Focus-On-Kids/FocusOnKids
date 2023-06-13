@@ -47,9 +47,7 @@
 }
 
 
-
 .header__menu__desktop .menu__chevron {
-  /* color: var(--principal-color-black); */
   height: 0.5rem;
   font-size: 1.5rem;
   transform: rotate(0deg);

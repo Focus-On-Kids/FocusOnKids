@@ -59,7 +59,7 @@ export default function MenuMobil() {
         </div>
       </div>
 
-      <nav>
+      <nav className={style.animate}>
         {showMenu && (
           <ul className={style.nav__dropdown__options}>
             {menuLinks.map((link) => (
@@ -96,7 +96,9 @@ export default function MenuMobil() {
                 )}
               </li>
             ))}
-            <li className={style.buscar}>
+
+            {/*! buscador oculto hasta implementacion */}
+            {/* <li className={style.buscar}>
               <div className={style.buscar__container}>
                 <input
                   className={style.buscar__input}
@@ -111,7 +113,7 @@ export default function MenuMobil() {
                   alt="buscar"
                 />
               </div>
-            </li>
+            </li> */}
           </ul>
         )}
       </nav>
